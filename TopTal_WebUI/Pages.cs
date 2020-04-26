@@ -26,5 +26,14 @@ namespace SeleniumEasy.COM
         public mPaige mPaige => GetPages<mPaige>();
         public BasicForm basicForm => GetPages<BasicForm>();
 
+        public HomePage homePage => GetPages<HomePage>();
+
+        public SearchPage searchPage => GetPages<SearchPage>();
+
+        public SearchErrorPage errorPage => GetPages<SearchErrorPage>();
+
+        public LogInPage loginPage => GetPages<LogInPage>();
+
+
     }
 }

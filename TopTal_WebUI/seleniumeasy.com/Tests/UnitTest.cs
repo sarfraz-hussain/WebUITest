@@ -4,33 +4,120 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-
-
 namespace SeleniumEasy.COM
 {
     [TestFixture]
     class UnitTest : TestBase
     {
+        
 
         [Test]
         public void VerifyMainPage()
         {
-            Pages.mPaige.ClickInputForms1Link();
-            Pages.mPaige.ClickSimpleFormDemo1Link();
-            //Pages.basicForm.FillAndSubmit();
+            HomePage homepage = Pages.homePage;
+
+            log(Pages.homePage.VerifyPageLoaded(), "Page Not Loaded");
+            log(Pages.homePage.VerifyPageTitle(), "Page Title not Verified");
+            log(Pages.homePage.VerifyPageElements(homepage.Technology), "Page Element 'Tehnology' not found");
+            log(Pages.homePage.VerifyPageElements(homepage.Products), "Page Element 'Products' not found");
+            log(Pages.homePage.VerifyPageElements(homepage.LogIn), "Page Element 'LogIn' not found");
+            log(Pages.homePage.VerifyPageTitle(), "Page Title not Verified");
+            log(Pages.homePage.VerifyPageElements(homepage.Search), "Page Element 'Search Image' not found");
+            log(Pages.homePage.VerifyPageElements(homepage.UploadImage), "Page Element 'Upload Image Button ' not found");
+            log(Pages.homePage.VerifyPageElements(homepage.ImageuUrlTxtBox), "Page Element 'url TextBox' not found");
 
         }
+
         [Test]
-        public void VerifyMainPage2()
+        public void UploadImage()
         {
-            Pages.mPaige.ClickInputForms1Link();
-            Pages.mPaige.ClickSimpleFormDemo1Link();
+            HomePage homepage = Pages.homePage;
+
+            log(Pages.homePage.VerifyPageTitle(), "Page Title not Verified");
+            log(Pages.homePage.ImageUpload(), "Image Could not be uploaded");
+
+
+            log(Pages.searchPage.VerifyPageLoaded(), "Page Not Loaded");
+            log(Pages.searchPage.VerifyPageTitle(), "Page Title not Verified");
+            log(Pages.searchPage.verifySearchResults(), "Un expected happend");
+
 
         }
 
+        [Test]
+        public void SearchImagebyUploadingImageURL()
+        {
+
+            log(Pages.homePage.VerifyPageLoaded(), "Page Not Loaded");
+            log(Pages.homePage.VerifyPageTitle(), "Page Title not Verified");
+            log(Pages.homePage.searchImagebyURL(), "URL not uploaded");
+            log(Pages.homePage.ClickSearchButton(), "Search button not clicked");
+
+            log(Pages.errorPage.VerifyPageLoaded(), "Page Not Loaded");
+            log(Pages.errorPage.VerifyPageTitle(), "Page Title not Verified");
+            log(Pages.errorPage.verifySearchResults(), "Seacrh Functinality Not Working using URL");
+
+        }
+
+        [Test]
+        public void SearchImagebySelectingBlanckURL()
+        {
+
+            log(Pages.homePage.VerifyPageLoaded(), "Page Not Loaded");
+            log(Pages.homePage.VerifyPageTitle(), "Page Title not Verified");
+            //log(Pages.homePage.searchImagebyURL(), "URL not uploaded");
+            log(Pages.homePage.ClickSearchButton(), "Search button not clicked");
+
+            log(Pages.errorPage.VerifyPageLoaded(), "Page Not Loaded");
+            log(Pages.errorPage.VerifyPageTitle(), "Page Title not Verified");
+            log(Pages.errorPage.verifyBlankSearchResults(), "Seacrh Functinality Not Working, as expected");
+
+        }
+
+        [Test]
+        public void VerifyLogInResponsewithInavidCredentials()
+        {
+            LogInPage loginpage = Pages.loginPage;
+
+            log(Pages.loginPage.OpenLogInPage(), "Page Not Loaded");
+            log(Pages.loginPage.VerifyPageLoaded(), "Page Not Loaded");
+            log(Pages.loginPage.VerifyPageTitle(), "Page Title not Verified");
+
+            log(Pages.loginPage.VerifyPageElements(loginpage.Email), "Page Element 'Email' not found");
+            log(Pages.loginPage.VerifyPageElements(loginpage.Password), "Page Element 'Password' not found");
+            log(Pages.loginPage.VerifyPageElements(loginpage.LogIn), "Page Element 'LogIn' not found");
+            log(Pages.loginPage.PerformLogIN("Admin","Admin"), "Log In Operations Failed");
+
+            log(Pages.loginPage.VerifyPageTitle(), "Page Title not Verified");
+            log(Pages.loginPage.verifyLogInErrorMessage(), "LogIn Behaviour is not as Desired");
+
+
+
+        }
+
+
+
+        private void log(HomePage page, string message)
+        {
+            Assert.IsFalse(page.status.ErrorOccurred, message);
+        }
+        private void log(SearchPage page, string message)
+        {
+            Assert.IsFalse(page.status.ErrorOccurred, message);
+        }
+        private void log(SearchErrorPage page, string message)
+        {
+            Assert.IsFalse(page.status.ErrorOccurred, message);
+        }
+        private void log(LogInPage page, string message)
+        {
+            Assert.IsFalse(page.status.ErrorOccurred, message);
+        }
 
     }
 }

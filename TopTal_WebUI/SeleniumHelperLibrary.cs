@@ -33,7 +33,7 @@ namespace Selenium.Core.CSharp
                     return true;
                     
                 }
-                extentReportsHelper.SetStepStatusPass($"[{elementName}] is displayed on the page.");
+                extentReportsHelper.SetStepStatusPass($"[{elementName}] is Not displayed on the page.");
                 return false;
             });
         }
