@@ -52,6 +52,7 @@ namespace SeleniumEasy.COM
         [Test]
         public void SearchImagebyUploadingImageURL()
         {
+            HomePage homepage = Pages.homePage;
 
             log(Pages.homePage.VerifyPageLoaded(), "Page Not Loaded");
             log(Pages.homePage.VerifyPageTitle(), "Page Title not Verified");
@@ -67,6 +68,7 @@ namespace SeleniumEasy.COM
         [Test]
         public void SearchImagebySelectingBlanckURL()
         {
+            HomePage homepage = Pages.homePage;
 
             log(Pages.homePage.VerifyPageLoaded(), "Page Not Loaded");
             log(Pages.homePage.VerifyPageTitle(), "Page Title not Verified");

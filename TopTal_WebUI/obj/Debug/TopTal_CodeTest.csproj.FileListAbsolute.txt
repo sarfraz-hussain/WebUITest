@@ -36,3 +36,4 @@ D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Debug\TopTal_CodeTest.cspr
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Debug\TopTal_WebUI.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Debug\TopTal_WebUI.pdb
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\Image.png
+D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Debug\TopTal_CodeTest.csprojAssemblyReference.cache
