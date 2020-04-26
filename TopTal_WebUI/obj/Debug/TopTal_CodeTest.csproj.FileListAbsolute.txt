@@ -3,6 +3,7 @@ D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\NUnit3.TestAdapter.p
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\nunit.engine.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\nunit.engine.api.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\Mono.Cecil.dll
+D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\Image.png
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\TopTal_WebUI.dll.config
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\TopTal_WebUI.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\TopTal_WebUI.pdb
@@ -35,5 +36,3 @@ D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\WebDriver.Support.xm
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Debug\TopTal_CodeTest.csproj.CopyComplete
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Debug\TopTal_WebUI.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Debug\TopTal_WebUI.pdb
-D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Debug\Image.png
-D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Debug\TopTal_CodeTest.csprojAssemblyReference.cache

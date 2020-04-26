@@ -50,7 +50,7 @@ namespace SeleniumEasy.COM
         }
 
         [Test]
-        public void SearchImagebyUploadingImageURL()
+        public void SearchImage()
         {
             HomePage homepage = Pages.homePage;
 
@@ -66,7 +66,7 @@ namespace SeleniumEasy.COM
         }
 
         [Test]
-        public void SearchImagebySelectingBlanckURL()
+        public void SearchImageURL()
         {
             HomePage homepage = Pages.homePage;
 
@@ -82,7 +82,7 @@ namespace SeleniumEasy.COM
         }
 
         [Test]
-        public void VerifyLogInResponsewithInavidCredentials()
+        public void InvalidLogIn()
         {
             LogInPage loginpage = Pages.loginPage;
 
