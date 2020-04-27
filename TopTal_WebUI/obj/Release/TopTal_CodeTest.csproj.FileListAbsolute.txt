@@ -3,6 +3,7 @@ D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\NUnit3.TestAdapter
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\nunit.engine.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\nunit.engine.api.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\Mono.Cecil.dll
+D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\Image.png
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\TopTal_WebUI.dll.config
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\TopTal_WebUI.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\TopTal_WebUI.pdb
@@ -32,7 +33,7 @@ D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\RazorEngine.xml
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\System.Web.Razor.xml
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\WebDriver.xml
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\WebDriver.Support.xml
+D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Release\TopTal_CodeTest.csprojAssemblyReference.cache
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Release\TopTal_CodeTest.csproj.CopyComplete
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Release\TopTal_WebUI.dll
 D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\obj\Release\TopTal_WebUI.pdb
-D:\Sarfraz\Test Automation\WebUITest\TopTal_WebUI\bin\Release\Image.png

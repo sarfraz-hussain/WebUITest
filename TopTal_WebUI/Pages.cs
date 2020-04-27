@@ -5,7 +5,7 @@ using SeleniumExtras;
 using System;
 using Selenium.Core.CSharp;
 
-namespace SeleniumEasy.COM
+namespace TopTal.WebUI
 
 {
     public class Pages
@@ -17,21 +17,21 @@ namespace SeleniumEasy.COM
         }
         Browsers _browser { get; }
         ExtentReportsHelper _extentReportsHelper { get; set; }
+
+        /// <summary>
+        /// Page Generator Implementation
+        /// </summary>
+
         private T GetPages<T>() where T : new()
         {
             var page = (T)Activator.CreateInstance(typeof(T), _browser.getDriver, _extentReportsHelper);
             PageFactory.InitElements(_browser.getDriver, page);
             return page;
         }
-        public mPaige mPaige => GetPages<mPaige>();
-        public BasicForm basicForm => GetPages<BasicForm>();
-
+       
         public HomePage homePage => GetPages<HomePage>();
-
         public SearchPage searchPage => GetPages<SearchPage>();
-
         public SearchErrorPage errorPage => GetPages<SearchErrorPage>();
-
         public LogInPage loginPage => GetPages<LogInPage>();
 
 

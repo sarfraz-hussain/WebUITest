@@ -1,4 +1,3 @@
-//Browsers.cs
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
@@ -18,6 +17,10 @@ namespace Selenium.Core.CSharp
         private string baseURL;
         private string browser;
         private ExtentReportsHelper extentReportsHelper;
+
+        /// <summary>
+        /// Intilize Browser, based on Selection from Config file, Also make it part of report
+        /// </summary>
         public void Init()
         {
             switch (browser)
@@ -43,19 +46,36 @@ namespace Selenium.Core.CSharp
             Goto(baseURL);
             
         }
+
+        /// <summary>
+        /// To get the Title of the webDriver Selected
+        /// </summary>
         public string Title
         {
             get { return webDriver.Title; }
         }
+
+        /// <summary>
+        /// Property to Get the Webdriver
+        /// </summary>
         public IWebDriver getDriver
         {
             get { return webDriver; }
         }
+
+        /// <summary>
+        /// To Navigae Browser, and update report about Naviaion
+        /// </summary>
+        /// <param name="url"></param>
         public void Goto(string url)
         {
             webDriver.Url = url;
             extentReportsHelper.SetStepStatusPass($"Browser navigated to the url [{url}].");
         }
+
+        /// <summary>
+        /// To close the active Web Driver and updae Report Accordingly
+        /// </summary>
         public void Close()
         {
             webDriver.Quit();

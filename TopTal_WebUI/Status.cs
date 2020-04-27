@@ -3,6 +3,9 @@
 
 namespace Return.Status
 {
+    /// <summary>
+    /// Status Class is sed to Transport Status Messae Between, different Clasees
+    /// </summary>
     public class Status : IEquatable<Status>
     {
         private bool errorOccurred;

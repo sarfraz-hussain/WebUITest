@@ -95,25 +95,20 @@
   <ItemGroup>
     <Compile Include="Browsers.cs" />
     <Compile Include="Pages.cs" />
-    <Compile Include="PropertiesCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportingLibrary.cs" />
-    <Compile Include="seleniumeasy.com\Pages\BasicForm.cs" />
-    <Compile Include="seleniumeasy.com\Pages\FirstDemoForm.cs" />
-    <Compile Include="seleniumeasy.com\Pages\HomePage.cs" />
-    <Compile Include="seleniumeasy.com\Pages\LogInPage.cs" />
-    <Compile Include="seleniumeasy.com\Pages\MainPage.cs" />
-    <Compile Include="seleniumeasy.com\Pages\PageObjects_LogIn.cs" />
-    <Compile Include="seleniumeasy.com\Pages\SearchErrorPage.cs" />
-    <Compile Include="seleniumeasy.com\Pages\SearchPage.cs" />
-    <Compile Include="seleniumeasy.com\Pages\TinEye.cs" />
-    <Compile Include="seleniumeasy.com\Tests\UnitTest.cs" />
-    <Compile Include="SeleniumGetMethods.cs" />
+    <Compile Include="TinEye.Com\Pages\HomePage.cs" />
+    <Compile Include="TinEye.Com\Pages\LogInPage.cs" />
+    <Compile Include="TinEye.Com\Pages\SearchErrorPage.cs" />
+    <Compile Include="TinEye.Com\Pages\SearchPage.cs" />
+    <Compile Include="TinEye.Com\Tests\InvalidLogIn.cs" />
+    <Compile Include="TinEye.Com\Tests\SearchImage.cs" />
+    <Compile Include="TinEye.Com\Tests\SearchImageByURL.cs" />
+    <Compile Include="TinEye.Com\Tests\SearchImageByFile.cs" />
+    <Compile Include="TinEye.Com\Tests\VerifyMainPage.cs" />
     <Compile Include="SeleniumHelperLibrary.cs" />
-    <Compile Include="SeleniumSetMethods.cs" />
     <Compile Include="Status.cs" />
     <Compile Include="TestBase.cs" />
-    <Compile Include="Validations.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

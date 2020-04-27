@@ -4,8 +4,11 @@ using Report.Extent;
 using System;
 using Selenium.Core.CSharp;
 
-namespace SeleniumEasy.COM
+namespace TopTal.WebUI
 {
+   /// <summary>
+   /// Test Base Class, this class provides basic attributes for Test Setup and Test Closuer
+   /// </summary>
     [TestFixture]
     public abstract class TestBase
     {

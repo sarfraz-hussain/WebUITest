@@ -8,6 +8,11 @@ namespace Selenium.Core.CSharp
 {
     public static class WebDiverExtensions
     {
+        /// <summary>
+        /// Take Screeen Capture and embedd in Test Report
+        /// </summary>
+        /// <param name="driver"></param>
+        /// <returns></returns>
         public static string ScreenCaptureAsBase64String(this IWebDriver driver)
         {
             ITakesScreenshot ts = (ITakesScreenshot)driver;
@@ -19,6 +24,9 @@ namespace Selenium.Core.CSharp
 
 namespace Selenium.Core.CSharp
 {
+    /// <summary>
+    /// Extension Functions to perform OPerations on Page Elements and Report Accordingly
+    /// </summary>
     public static class WebElementExtension
     {
         public static bool ControlDisplayed(this IWebElement element, IWebDriver driver, ExtentReportsHelper extentReportsHelper, string elementName, bool displayed = true, uint timeoutInSeconds = 60)
