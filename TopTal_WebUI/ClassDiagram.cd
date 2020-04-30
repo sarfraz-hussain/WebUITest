@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TopTal.WebUI.Pages">
+    <Position X="3.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAQCAAAAAAAAAAAAAAAAAGAAAQAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Pages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TopTal.WebUI.TestBase">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAEABAI=</HashCode>
+      <FileName>TestBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TopTal.WebUI.UnitTest">
+    <Position X="0.5" Y="7" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEICAQAAAAAABAAAAAAAAABAAA=</HashCode>
+      <FileName>TinEye.Com\Tests\InvalidLogIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Selenium.Core.CSharp.Browsers">
+    <Position X="6.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CgQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAACACKA=</HashCode>
+      <FileName>Browsers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Selenium.Core.CSharp.WebDiverExtensions">
+    <Position X="13" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SeleniumHelperLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Selenium.Core.CSharp.WebElementExtension">
+    <Position X="11" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAIAgIAAAAAAIAABAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>SeleniumHelperLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Return.Status.Status" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAEA4AABACAAAAAAAIBAAAAAQAAACiA=</HashCode>
+      <FileName>Status.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Report.Extent.ExtentReportsHelper">
+    <Position X="8.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABIAoAAQAAAAAAAAABAAAAAAAAAIKAAAEACAAAA=</HashCode>
+      <FileName>ReportingLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogInPage">
+    <Position X="1.25" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAQCAABAAAAAgAAACAQAAAADACIIASAACAIAA=</HashCode>
+      <FileName>TinEye.Com\Pages\LogInPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomePage">
+    <Position X="8.5" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgwAAABAQAAAJAAAAAAAAAiAQQAAgTAAIAASgAAgIAQ=</HashCode>
+      <FileName>TinEye.Com\Pages\HomePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SearchPage">
+    <Position X="6" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAQAAQBAAAAAAAAACAgAAAAAAAIAASgAAAIAA=</HashCode>
+      <FileName>TinEye.Com\Pages\SearchPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SearchErrorPage">
+    <Position X="11" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAQAAQBAAAAAAAAACAgAAAAAAAMAASgAAAIAA=</HashCode>
+      <FileName>TinEye.Com\Pages\SearchErrorPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
