@@ -1,9 +1,19 @@
-on: push
+name: Example of cURL action
+
+on: [ push ]
 jobs:
-  curl:
-    runs-on: ubuntu-latest
-    steps:
-    - name: curl
-      uses: wei/curl@master
-      with:
-        args: -X POST "https://api.testproject.io/v2/projects/m_wv41nxx0qHyIreGqFzcA/jobs/GdeSZtQwpUKxW0c8_nIiBw/run" -H "accept: application/json" -H "Authorization: NjJStEVYofrtP1NgTUT3ya6Fuq4SjlsJlqZTATc-EuY1" -H "Content-Type: application/json" -d "{ \"agentId\": \"4MNyrrCGlU--SN9s-8H8xg\",}"
+    test-curl-action:
+        name: 'Perform REST API'
+        runs-on: ubuntu-latest
+        steps:
+            - name: 'Call API'
+              uses: indiesdev/curl@v1
+              id: api
+              with:
+                url: https://api.testproject.io/v2/projects/m_wv41nxx0qHyIreGqFzcA/jobs/GdeSZtQwpUKxW0c8_nIiBw/run
+                method: 'POST'
+                accept: 201,200
+                headers: '{ "accept": "application/json", "Authorization": "NjJStEVYofrtP1NgTUT3ya6Fuq4SjlsJlqZTATc-EuY1","Content-Type": "application/json"}'
+                body: '{ "agentId": "4MNyrrCGlU--SN9s-8H8xg" }'
+            - name: 'Use response'
+              run: echo ${{ steps.api.outputs.response }}
