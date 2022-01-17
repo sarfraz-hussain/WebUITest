@@ -6,4 +6,4 @@ jobs:
     - name: curl
       uses: wei/curl@master
       with:
-        args: https://api.testproject.io/v2/projects/m_wv41nxx0qHyIreGqFzcA/jobs/GdeSZtQwpUKxW0c8_nIiBw/run
+        args: -X POST "https://api.testproject.io/v2/projects/m_wv41nxx0qHyIreGqFzcA/jobs/GdeSZtQwpUKxW0c8_nIiBw/run" -H "accept: application/json" -H "Authorization: NjJStEVYofrtP1NgTUT3ya6Fuq4SjlsJlqZTATc-EuY1" -H "Content-Type: application/json" -d "{ \"agentId\": \"4MNyrrCGlU--SN9s-8H8xg\",}"
