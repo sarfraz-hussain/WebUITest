@@ -15,7 +15,7 @@ jobs:
                 accept: 201,200
                 headers: '{ "accept": "application/json", "Authorization": "NjJStEVYofrtP1NgTUT3ya6Fuq4SjlsJlqZTATc-EuY1","Content-Type": "application/json"}'
                 body: '{ "agentId": "y_qVvwWKH0ixXvMO1B4GdQ" }'
-                timeout: 10000
+                timeout: 20000
                 
             - name: 'Use response'
               run: echo ${{ steps.api.outputs.response }}
