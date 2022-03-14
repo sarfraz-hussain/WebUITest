@@ -10,11 +10,11 @@ jobs:
               uses: indiesdev/curl@v1
               id: api
               with:
-                url: https://api.testproject.io/v2/projects/m_wv41nxx0qHyIreGqFzcA/jobs/GdeSZtQwpUKxW0c8_nIiBw/run
+                url: https://api.testproject.io/v2/projects/m_wv41nxx0qHyIreGqFzcA/jobs/Q141ZxB4MECl4zaSoyJrYQ/run
                 method: 'POST'
                 accept: 201,200
                 headers: '{ "accept": "application/json", "Authorization": "NjJStEVYofrtP1NgTUT3ya6Fuq4SjlsJlqZTATc-EuY1","Content-Type": "application/json"}'
-                body: '{ "agentId": "4MNyrrCGlU--SN9s-8H8xg" }'
+                body: '{ "agentId": "y_qVvwWKH0ixXvMO1B4GdQ" }'
                 timeout: 10000
                 
             - name: 'Use response'
