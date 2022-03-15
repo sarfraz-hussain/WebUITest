@@ -83,4 +83,5 @@ namespace Selenium.Core.CSharp
             extentReportsHelper.SetStepStatusPass($"Browser closed.");
         }
     }
+    //
 }
