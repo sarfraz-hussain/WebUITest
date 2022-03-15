@@ -5,6 +5,7 @@ using Report.Extent;
 using System.Configuration;
 namespace Selenium.Core.CSharp
 {
+//
     public class Browsers
     {
         public Browsers(ExtentReportsHelper reportsHelper)
